@@ -10,6 +10,7 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find(params[:id])
+    @message = params[:message] if params[:message]
     if logged_in?
       render :show 
     else

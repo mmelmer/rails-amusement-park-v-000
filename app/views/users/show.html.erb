@@ -1,5 +1,8 @@
 <% if @user.admin %>
-  <%= "ADMIN" %>
+  <%= "ADMIN" %><br>
+<% end %>
+<% if @message %>
+  <%= @message %><br>
 <% end %>
 <p>Name: <%= @user.name %> </p>
 <p>Mood:  <%= @user.mood %> </p>
